@@ -10,11 +10,6 @@ let rechargeTimeUpgradeCost = 1000;
 let batteryLevel = 1;
 let rechargeSpeedLevel = 1;
 
-//disable zoom
-document.addEventListener('touchmove', function(event) {
-    event.preventDefault();
-}, { passive: false });
-
 
 const pointsDisplay = document.getElementById('points');// point display
 const ppcDisplay = document.getElementById('ppc');// point per click display
@@ -78,6 +73,25 @@ let rechargeInterval = setInterval(rechargeBattery, (rechargeTime / batteryLimit
 function updateRechargeSpeed() {
     clearInterval(rechargeInterval);
     rechargeInterval = setInterval(rechargeBattery, (rechargeTime / batteryLimit) * 1000);
+}
+
+function grantPoints(pointsToAdd) {
+    setTimeout(() => {
+        points += pointsToAdd;
+        updateDisplay();
+    }, 10000); // 10 seconds delay
+}
+
+function handleLinkClick(platform, linkElement, url) {
+    if (!linkUsed[platform]) {
+        grantPoints(10000);
+        linkUsed[platform] = true;
+        linkElement.style.color = 'black';
+        linkElement.style.pointerEvents = 'none';
+        window.open(url, '_blank');
+    } else {
+        alert('You have already used this link for free points.');
+    }
 }
 
 youtubeLink.addEventListener('click', (e) => {
