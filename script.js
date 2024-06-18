@@ -10,6 +10,11 @@ let rechargeTimeUpgradeCost = 1000;
 let batteryLevel = 1;
 let rechargeSpeedLevel = 1;
 
+//disable zoom
+document.addEventListener('touchmove', function(event) {
+    event.preventDefault();
+}, { passive: false });
+
 
 const pointsDisplay = document.getElementById('points');// point display
 const ppcDisplay = document.getElementById('ppc');// point per click display
