@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Point</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Virtual Point</h1>
+            <div class="stats">
+                <p>Points: <span id="points">0</span></p>
+                <p>Points per click: <span id="ppc">1</span></p>
+            </div>
+        </div>
+        <div id="top-section">
+            <button id="upgrade-screen-button" class="top-left">Upgrade</button>
+            <button id="free-points-button" class="top-right">Free Points</button>
+            <button id="back-to-game-button">Back to Game</button>
+        </div>
+        <div id="game-section">
+            <div class="click-area">
+                <button id="click-button">
+                    <img src="Bitcoin-PNG-Pic.png" alt="Click me" class="circle-image">
+                </button>
+            </div>
+            <p>Battery: <span id="battery">500/500</span></p>
+        </div>
+        <div id="upgrade-section" class="hidden">
+            <h2>Upgrade Your Game</h2>
+            <p>Click the upgrade buttons and have a better game</p>
+            <button id="upgrade-button">Upgrade PPC (Cost: <span id="upgrade-cost">10</span>)</button>
+            <button id="battery-upgrade-button">Upgrade Battery (Cost: <span id="battery-upgrade-cost">1000</span>)</button>
+            <button id="recharge-time-upgrade-button">Upgrade Recharge Time (Cost: <span id="recharge-time-upgrade-cost">1000</span>)</button>
+            <button id="back-button-2">Back to Game</button>
+        </div>
+        <div id="free-points-section" class="hidden">
+            <h2>Get Free Points</h2>
+            <p>Click the links below to earn free points:</p>
+            <ul>
+                <li><a href="#" id="youtube-link">YouTube</a></li>
+                <li><a href="#" id="instagram-link">Instagram</a></li>
+                <li><a href="#" id="twitter-link">Twitter</a></li>
+            </ul>
+            <button id="back-button">Back to Game</button>
+        </div>
+    </div>
+    <audio id="click-sound" src="sounds/click.mp3"></audio>
+    <audio id="upgrade-sound" src="sounds/upgrade.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
