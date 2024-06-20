@@ -1,4 +1,4 @@
-let points = 1000000;
+let points = 10000000;
 let pointsPerClick = 1;
 let upgradeCost = 100;
 
@@ -382,6 +382,7 @@ backButton.addEventListener('click', () => {
 });
 
 upgradeScreenButton.addEventListener('click', () => {
+    freePointsButton.classList.remove('hidden');
     gameSection.classList.add('hidden');
     upgradeScreenButton.classList.add('hidden');
     freePointsSection.classList.add('hidden');
