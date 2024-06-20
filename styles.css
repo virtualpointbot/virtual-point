@@ -1,4 +1,5 @@
 body {
+    touch-action: pan-y;
     font-family: Arial, sans-serif;
     background-color: #ffffcc; /* Soft Yellow */
     display: flex;
