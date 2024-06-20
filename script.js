@@ -1,4 +1,4 @@
-let points = 10000000;
+let points = 1000000;
 let pointsPerClick = 1;
 let upgradeCost = 100;
 
@@ -96,17 +96,17 @@ function handleLinkClick(platform, linkElement, url) {
 
 youtubeLink.addEventListener('click', (e) => {
     e.preventDefault();
-    handleLinkClick('youtube', youtubeLink, 'https://www.youtube.com');
+    handleLinkClick('youtube', youtubeLink, 'https://www.youtube.com/@RostamVCT/shorts');
 });
 
 instagramLink.addEventListener('click', (e) => {
     e.preventDefault();
-    handleLinkClick('instagram', instagramLink, 'https://www.instagram.com');
+    handleLinkClick('instagram', instagramLink, 'instagram.com/rostam.vct');
 });
 
 twitterLink.addEventListener('click', (e) => {
     e.preventDefault();
-    handleLinkClick('twitter', twitterLink, 'https://www.twitter.com');
+    handleLinkClick('twitter', twitterLink, 'https://x.com/mr_gixer');
 });
 
 clickButton.addEventListener('click', () => {
