@@ -101,7 +101,7 @@ youtubeLink.addEventListener('click', (e) => {
 
 instagramLink.addEventListener('click', (e) => {
     e.preventDefault();
-    handleLinkClick('instagram', instagramLink, 'instagram.com/rostam.vct');
+    handleLinkClick('instagram', instagramLink, 'https://www.instagram.com/hossein_shakeri_sh?igsh=MTVuaTdnMDU2M2g4');
 });
 
 twitterLink.addEventListener('click', (e) => {
