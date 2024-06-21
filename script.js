@@ -1,4 +1,4 @@
-let points = 10000000;
+let points = 10000;
 let pointsPerClick = 1;
 let upgradeCost = 100;
 
